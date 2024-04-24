@@ -60,7 +60,9 @@ posts_dict = {
 
 def post_detail(request, post_id):
     if post_id in posts_dict:
-        return render(request, 'blog/detail.html', {'post': posts_dict[post_id]})
+        return render(request,
+                      'blog/detail.html',
+                      {'post': posts_dict[post_id]})
     raise Http404('Требуемая страница не найдена')
 
 
