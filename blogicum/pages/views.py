@@ -1,19 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
-
 
 def about(request):
-
-    template_name = 'pages/about.html'
-    title = 'О проекте'
-    context = {'title': title}
-    return render(request, template_name, context)
+    return render(request, 'pages/about.html')
 
 
 def rules(request):
-
-    template_name = 'pages/rules.html'
-    title = 'Наши правила'
-    context = {'title': title}
-    return render(request, template_name, context)
+    return render(request, 'pages/rules.html')
